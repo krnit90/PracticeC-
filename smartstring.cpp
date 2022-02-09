@@ -22,7 +22,7 @@ class smartstring
 		}
 		
 		//overloaded assignment operator , called when two objects are assigned
-		smartstring operator = (const smartstring& obj) {
+		smartstring& operator = (const smartstring& obj) {
 			if (this != &obj) {
 				length = 0;
 				pbuf.release();
